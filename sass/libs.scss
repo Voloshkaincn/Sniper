@@ -1,1 +1,14 @@
-﻿@import '../libs/bootstrap-grid.min.css';
+﻿@import '../libs/bootstrap-scss/bootstrap-grid.scss';
+@import '../libs/bootstrap-scss/mixins/_hover.scss';
+@import '../libs/bootstrap-scss/mixins/_caret.scss';
+@import '../libs/bootstrap-scss/mixins/_border-radius.scss';
+@import '../libs/bootstrap-scss/mixins/_box-shadow.scss';
+@import '../libs/bootstrap-scss/mixins/_nav-divider.scss';
+@import '../libs/bootstrap-scss/mixins/_gradients.scss';
+@import '../libs/bootstrap-scss/mixins/_transition.scss';
+@import '../libs/bootstrap-scss/_nav.scss';
+@import '../libs/bootstrap-scss/_navbar.scss';
+@import '../libs/bootstrap-scss/_dropdown.scss';
+@import '../libs/bootstrap-scss/_transitions.scss';
+
+@import '../libs/slick.scss';

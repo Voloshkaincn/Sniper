@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Sniper</title>
 
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
 </head>
 <body>
 	<?php include 'header.php'; ?>
+
+	<?php include 'main.php'; ?>
 
 
 	<?php include 'footer.php'; ?>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
