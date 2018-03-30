@@ -1,4 +1,9 @@
-﻿@import '../libs/bootstrap-scss/bootstrap-grid.scss';
+﻿$spacers: (
+	6: (1rem * 4),
+	7: (1rem * 5)
+);
+
+@import '../libs/bootstrap-scss/bootstrap-grid.scss';
 @import '../libs/bootstrap-scss/mixins/_hover.scss';
 @import '../libs/bootstrap-scss/mixins/_caret.scss';
 @import '../libs/bootstrap-scss/mixins/_border-radius.scss';
@@ -10,5 +15,12 @@
 @import '../libs/bootstrap-scss/_navbar.scss';
 @import '../libs/bootstrap-scss/_dropdown.scss';
 @import '../libs/bootstrap-scss/_transitions.scss';
+@import '../libs/bootstrap-scss/utilities/_spacing.scss';
+@import '../libs/bootstrap-scss/_breadcrumb.scss';
+@import '../libs/bootstrap-scss/mixins/_text-truncate.scss';
+@import '../libs/bootstrap-scss/mixins/_text-emphasis.scss';
+@import '../libs/bootstrap-scss/mixins/_text-hide.scss';
+@import '../libs/bootstrap-scss/utilities/_text.scss';
 
 @import '../libs/slick.scss';
+@import '../libs/jquery.fancybox.css';

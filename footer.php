@@ -41,14 +41,14 @@
 		</div>
 		<div class="footer__block">
 			<div class="footer__title">Контакти</div>
-			<div class="footer__contact">
-				<span class="footer__icon icon-phone"></span>
+			<div class="d-block mb-4">
+				<span class="contact__icon icon-phone"></span>
 				<span class="d-inline-block">
 					<a href="tel:093123456" class="d-block phone"><span class="main-color">093</span> 123-45-67</a>
 					<a href="tel:093123456" class="d-block phone"><span class="main-color">093</span> 123-45-67</a>
 				</span>
 			</div>			
-			<a href="mailto:sniper@gmail.com" class="footer__contact email"><span class="main-color icon icon-mail"></span>sniper@gmail.com</a>
+			<a href="mailto:sniper@gmail.com" class="d-block mb-4 email"><span class="main-color icon icon-mail"></span>sniper@gmail.com</a>
 			<button class="footer__btn btn__main-full">Замовити гру</button> 
 		</div>
 	</div>

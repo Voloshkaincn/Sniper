@@ -13,15 +13,44 @@
 <body>
 	<?php include 'header.php'; ?>
 
-	<?php include 'main.php'; ?>
+	<div class="d-none">
+		<?php include 'main.php'; ?>
+
+		<?php include 'about_us.php'; ?>
+
+		<?php include 'news_view.php'; ?>
+
+		<?php include 'news.php'; ?>
+
+		<?php include 'promo-actions.php'; ?>
+
+		<?php include 'gallery-photo.php'; ?>
+
+		<?php include 'gallery-photo__view.php'; ?>
+
+		<?php include 'gallery-video.php'; ?>
+
+		<?php include 'price.php'; ?>
+
+	</div>
+
+		
+		<?php include 'contacts.php'; ?>
+
+	
+
+	
+
 
 
 	<?php include 'footer.php'; ?>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWnJbKB5kRy1KuDe5pQlxv8ysXCRO7k6U&callback=initMap"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

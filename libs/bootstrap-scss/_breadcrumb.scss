@@ -4,7 +4,6 @@
   padding: $breadcrumb-padding-y $breadcrumb-padding-x;
   margin-bottom: $breadcrumb-margin-bottom;
   list-style: none;
-  background-color: $breadcrumb-bg;
   @include border-radius($border-radius);
 }
 
@@ -14,8 +13,8 @@
     display: inline-block; // Suppress underlining of the separator in modern browsers
     padding-right: $breadcrumb-item-padding;
     padding-left: $breadcrumb-item-padding;
-    color: $breadcrumb-divider-color;
-    content: "#{$breadcrumb-divider}";
+    color: #333;
+    content: ">";
   }
 
   // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built

@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function(){	
+
 	$('.language').click(function(){
 	  $(this).toggleClass('is-open');
 	});
@@ -23,6 +24,15 @@ $(document).ready(function(){
 		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
 		slidesToShow: 3
-
 	});
+
+	$('.gallery__slider').slick({
+		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
+		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
+		slidesToShow: 4
+	})
+
+	var slide_height = $('.slide-full-height').height();
+	$('.slide-full-height').find('.slick-slide').height(slide_height);
+
 });
