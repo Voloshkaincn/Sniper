@@ -15,15 +15,29 @@ $(document).ready(function(){
 		customPaging: function(){
 			return '<div class="main__slider-pag"></div>';
 		},
-		autoplay: true,
-		autoplaySpeed: 5000
+		//autoplay: true,
+		//autoplaySpeed: 5000
 	});
 
 	$('.news__slider').slick({
 		//appendArrows: '$(".content-after-title")',
 		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
-		slidesToShow: 3
+		slidesToShow: 3,
+		 responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 2,
+		      },
+		  },
+		  {
+		      breakpoint: 461,
+		      settings: {
+		        slidesToShow: 1,
+		      }
+		   }
+		]
 	});
 
 	$('.gallery__slider').slick({
@@ -34,5 +48,16 @@ $(document).ready(function(){
 
 	var slide_height = $('.slide-full-height').height();
 	$('.slide-full-height').find('.slick-slide').height(slide_height);
+
+	$('.header__humburger').click(function(){
+		 $('html').one('click',function() {
+            $('.header').removeClass('show');
+        });
+		$('.header__collapse').on('click', function(){
+			event.stopPropagation();
+		})
+		$('.header').toggleClass('show');
+		event.stopPropagation();
+	});
 
 });

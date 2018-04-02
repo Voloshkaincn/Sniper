@@ -1,84 +1,115 @@
 <div class="main">
 	<div class="main__slider">
 		<div class="main__slide">
-			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);"> 
-				<h1 class="main__title light-color">Пейнтбол в Києві</h1>
-				<p class="main__slide-p big-text light-color ">
-					<span class="text-dashed main-color">Незабутній активний відпочинок</span>
-					<span> для дорослих та дітей просто неба.</span><span class="desc-arrow"></span>
-				</p>
-				<div class="col-6 row">
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-empty light-color">Фото полігону</button>
-					</div>
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-full">Замовити гру</button>
-					</div>
-				</div>			
-			</div>
-		</div>
-		<div class="main__slide">
-			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);"> 
-				<h1 class="main__title light-color">Пейнтбол в Києві</h1>
-				<p class="main__slide-p big-text light-color">
-					<span class="text-dashed main-color">2</span>
-				</p>
-				<div class="col-6 row">
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-empty light-color">Фото полігону</button>
-					</div>
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-full">Замовити гру</button>
+			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);">
+				<div class="container m-auto"> 
+					<h1 class="main__title light-color">Пейнтбол в Києві</h1>
+					<p class="main__slide-p big-text light-color ">
+						<span class="text-dashed main-color">Незабутній активний відпочинок</span>
+						<span class="d-sm-inline-block d-md-inline"> для дорослих та дітей просто неба.</span>
+						<span class="desc-arrow d-sm-inline d-none"></span>
+					</p>
+					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
+						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
+							<button class="main__slide-btn btn__main-empty light-color">
+								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+							</button>
+						</div>
+						<div class="col-lg-6 col-12 d-inline-block">
+							<button class="main__slide-btn btn__main-full">
+								<img src="img/maska.png" alt="icon">Замовити гру
+							</button>
+						</div>
 					</div>
 				</div>			
 			</div>
 		</div>
 		<div class="main__slide">
-			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);"> 
-				<h1 class="main__title light-color">Пейнтбол в Києві</h1>
-				<p class="main__slide-p big-text light-color">
-					<span class="text-dashed main-color">3</span>
-				</p>
-				<div class="col-6 row">
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-empty light-color">Фото полігону</button>
-					</div>
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-full">Замовити гру</button>
-					</div>
-				</div>			
+			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);">
+				<div class="container m-auto"> 
+					<h1 class="main__title light-color">Пейнтбол в Києві</h1>
+					<p class="main__slide-p big-text light-color">
+						<span class="text-dashed main-color">2</span>
+					</p>
+					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
+						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
+							<button class="main__slide-btn btn__main-empty light-color">
+								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+							</button>
+						</div>
+						<div class="col-lg-6 col-12 d-inline-block">
+							<button class="main__slide-btn btn__main-full">
+								<img src="img/maska.png" alt="icon">Замовити гру
+							</button>
+						</div>
+					</div>				
+				</div>
 			</div>
 		</div>
 		<div class="main__slide">
-			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);"> 
+			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);">
+				<div class="container m-auto"> 
+					<h1 class="main__title light-color">Пейнтбол в Києві</h1>
+					<p class="main__slide-p big-text light-color">
+						<span class="text-dashed main-color">3</span>
+					</p>
+					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
+						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
+							<button class="main__slide-btn btn__main-empty light-color">
+								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+							</button>
+						</div>
+						<div class="col-lg-6 col-12 d-inline-block">
+							<button class="main__slide-btn btn__main-full">
+								<img src="img/maska.png" alt="icon">Замовити гру
+							</button>
+						</div>
+					</div>				
+			</div>
+			</div>
+		</div>
+		<div class="main__slide">
+			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);">
+				<div class="container m-auto"> 
 				<h1 class="main__title light-color">Пейнтбол в Києві</h1>
 				<p class="main__slide-p big-text light-color">
 					<span class="text-dashed main-color">4</span>
 				</p>
-				<div class="col-6 row">
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-empty light-color">Фото полігону</button>
+				<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
+					<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
+						<button class="main__slide-btn btn__main-empty light-color">
+							<img src="img/photo-camera.png" alt="icon"> Фото полігону
+						</button>
 					</div>
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-full">Замовити гру</button>
+					<div class="col-lg-6 col-12 d-inline-block">
+						<button class="main__slide-btn btn__main-full">
+							<img src="img/maska.png" alt="icon">Замовити гру
+						</button>
 					</div>
 				</div>			
 			</div>
+			</div>
 		</div>
 		<div class="main__slide">
-			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);"> 
+			<div class="main__slide-content slide-content" style="background-image: url(img/content/slide1.jpg);">
+				<div class="container m-auto"> 
 				<h1 class="main__title light-color">Пейнтбол в Києві</h1>
 				<p class="main__slide-p big-text light-color">
 					<span class="text-dashed main-color">5</span>
 				</p>
-				<div class="col-6 row">
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-empty light-color">Фото полігону</button>
+				<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
+					<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
+						<button class="main__slide-btn btn__main-empty light-color">
+							<img src="img/photo-camera.png" alt="icon"> Фото полігону
+						</button>
 					</div>
-					<div class="col-6 d-inline-block">
-						<button class="main__slide-btn btn__main-full">Замовити гру</button>
+					<div class="col-lg-6 col-12 d-inline-block">
+						<button class="main__slide-btn btn__main-full">
+							<img src="img/maska.png" alt="icon">Замовити гру
+						</button>
 					</div>
 				</div>			
+			</div>
 			</div>
 		</div>
 	</div>
@@ -90,8 +121,8 @@
 			<div class="news__slider slide-full-height row">
 				<div class="news__slide">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide1.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide4.jpg);">
+							<!-- <img src="img/content/slide1.jpg" alt="img"> -->
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -103,8 +134,8 @@
 				</div>
 				<div class="news__slide">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide2.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide1.jpg);">
+							<!-- <img src="img/content/slide2.jpg" alt="img"> -->
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -116,8 +147,8 @@
 				</div>
 				<div class="news__slide">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide3.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide2.jpg);">
+							<!-- <img src="img/content/slide3.jpg" alt="img"> -->
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -129,8 +160,8 @@
 				</div>
 				<div class="news__slide">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide4.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide3.jpg);">
+							<!-- <img src="img/content/slide4.jpg" alt="img"> -->
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -141,7 +172,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-3 m-auto">
+			<div class="col-lg-3 col-sm-6 col-10 m-auto">
 				<a href="/news" class="btn__main-empty">Всі новини</a>
 			</div>
 		</div>

@@ -343,6 +343,9 @@ $primary-bg: #303030;
   }
   .container {
     padding: 0;
+    @media (max-width: 575px){
+      padding: 0 1em;
+    }
   }
   .container-row {
       display: flex;
@@ -363,7 +366,11 @@ $primary-bg: #303030;
       &:hover {
           outline: none;
       }
-
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.65em;
+      }
       &__main-full {
           @extend .btn;
           height: 3em;
@@ -428,6 +435,12 @@ $primary-bg: #303030;
       line-height: 3.778em;
     }
   }
+  button:focus,
+  a:focus,
+  input:focus,
+  textarea:focus {
+    outline-color: $main-color;
+  }
 //----end classes modifiers
 
 .language {
@@ -441,6 +454,7 @@ $primary-bg: #303030;
     height: 1.4em;
     line-height: 1.4em;
     overflow: hidden;
+    background-color: inherit;
     &:after {
         content: '';
         border-top: 0.250rem solid #fff;
@@ -461,16 +475,23 @@ $primary-bg: #303030;
         position: relative;
         width: 4.37em;
         height: 1.4em;
+        z-index: 2;
+        background-color: inherit;
+        @media (max-width: 767px){
+          display: none;
+        }
     }
     &__el {
         display: flex;
         flex: 1;
-        background-color: $primary-bg;
         order: 2;
         min-height: 1.4em;
         transition: all .2s ease;
         padding-left: 0.188em;
         padding-right: 1rem;
+        @media(max-width: 767px){
+          background-color: $basic-bg;
+        }
         &:hover {
             background-color: $main-color;
         }
@@ -483,11 +504,41 @@ $primary-bg: #303030;
         align-items: center;
     }
     &__img {
-        display: flex;
         width: 22px;
         height: 15px;
         margin-right: 0.5em;
     }
+}
+.flag_ua {
+  div {
+    width: 100%;
+    display: block;
+    height: 50%;
+    box-shadow: inset -3px -4px 6px 0px rgba(0, 0, 0, 0.25);
+    &:first-child {
+      background-color: #0032d9;
+    }
+    &:nth-child(2) {
+      background-color: #fffa00;
+    }    
+  }
+}
+.flag_ru {
+  div {
+    width: 100%;
+    display: block;
+    height: 33.3%;
+    box-shadow: inset -3px -4px 6px 0px rgba(0, 0, 0, 0.25);
+    &:first-child {
+      background-color: #fff;
+    }
+    &:nth-child(2) {
+      background-color: #0139a6;
+    }
+    &:nth-child(3) {
+      background-color: #d62c1e;
+    }    
+  }
 }
 
 .header {
@@ -495,8 +546,55 @@ $primary-bg: #303030;
     color: #fff;
     line-height: 1.4em;
     font-size: 1.125rem;
+    z-index: 9;
+    position: relative;
     @media(max-width: 1199px) {
         font-size: 1rem;
+    }
+    &.show {
+      @media(max-width: 991px) {
+        .header__collapse {
+          max-height: 100vh;
+          padding: 1em;
+          height: auto;
+          transition: max-height 1s;
+        }
+      }
+      @media(max-width: 767px) {
+        .header__mobile {
+          display: flex;
+          position: absolute;
+          bottom: 1em;
+          left: 1em;
+          height: 80%;
+          height: calc(100% - 2em);
+          justify-content: space-between;
+          flex-direction: column;
+          .header__social {
+            display: block;
+            text-align: left;
+          }
+          .language__wrap {
+            display: block;
+          }
+          .header__contact {
+            display: none;
+          }
+        }
+      }
+      @media (max-width: 575px) {
+        .header__mobile {
+          height: calc(100% - 5em);
+          .header__contact {
+            display: block;
+            margin: 0;
+            text-align: left;
+          }
+        }
+      }
+    }
+    &__mobile {
+      display: none;
     }
     &__top {
         background-color: $primary-bg;
@@ -504,13 +602,20 @@ $primary-bg: #303030;
         justify-content: flex-end;
         align-items: center;
         height: 3.125rem;
+        @media (max-width: 991px) {
+          height: 2.5em;
+        }
+        @media (max-width: 575px) {
+          height: 0;
+        }
         .container {
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            @media(max-width: 1199px) {
-                padding: 0 15px;
+            background-color: inherit;
+            @media (max-width: 991px) {
+              position: relative;
             }
         }
     }
@@ -523,6 +628,9 @@ $primary-bg: #303030;
             bottom: 0;
             background-color: $basic-bg;
             z-index: -1;
+            @media (max-width: 575px) {
+              height: 90%;              
+            }
         }
     }
     &__social {
@@ -530,11 +638,27 @@ $primary-bg: #303030;
         @media (max-width: 1299px) {
             margin-right: 5em;
         }
+        @media (max-width: 991px){
+          margin-right: 1em;
+        }
+        @media (max-width: 767px){
+          display: none;
+        }
     }
     &__contact {
         margin-right: 2em;
         @media (max-width: 1299px) {
             margin-right: 1.5em;
+        }
+        @media (max-width: 991px) {
+          margin-right: 1em;
+        }
+        @media (max-width: 767px) {
+          margin-right: 0;
+          margin-left: 1em;
+        }
+        @media (max-width: 575px) {
+          display: none;
         }
         .icon {
             color: $main-color;
@@ -543,6 +667,12 @@ $primary-bg: #303030;
     &__nav {
         background-color: $basic-bg;
         height: 5em;
+        @media (max-width: 991px) {
+          height: 3em;
+        }
+        @media (max-width: 575px) {
+          height: 3.5em;
+        }
         .container {
             height: 100%;
         }
@@ -555,6 +685,23 @@ $primary-bg: #303030;
     &__collapse {
         justify-content: flex-end;
         height: inherit;
+        @media (max-width: 991px) {
+          height: 0;
+          overflow: hidden;
+          text-align: right;
+          background: #3b3b3b;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 80%;
+          width: calc(100% - 8em);
+          padding: 0;
+          transition: max-height 1s;
+          max-height: 0;
+        }
+        @media(max-width: 575px) {
+          width: 100%;
+        }
     }
     &-menu {
         display: flex;
@@ -563,6 +710,10 @@ $primary-bg: #303030;
         margin-right: 3.5em;
         @media(max-width: 1299px) {
             margin-right: 1.5em;
+        }
+        @media(max-width: 991px) {
+            margin-right: 0;
+            display: inline-block;
         }
         &__item {
             margin: 0 1.1em;
@@ -573,27 +724,75 @@ $primary-bg: #303030;
             border-bottom: 0.313em solid transparent;
             &:hover {
                 border-bottom: 0.3rem solid $main-color;
+                @media(max-width: 991px) {
+                  border-color: transparent;
+                }
+            }
+            @media(max-width: 991px) {
+              margin: 0.5em 0 0;
+              display: block;
             }
         }
         &__link {
             display: flex;
             height: inherit;
             align-items: center;
+            @media(max-width: 991px) {
+              justify-content: flex-end;
+            }
         }
         .dropdown-menu {
             top: 80%;
             width: 270px;
             padding: 0;
             margin: 0;
+            @media(max-width: 991px) {
+              width: auto;
+              display: block;
+              background-color: transparent;
+              border: none;
+              min-width: 0;
+              margin-right: 0.25em;
+            }
         }
         .dropdown:hover>.dropdown-menu {
             display: block;
             animation: dropdown 0.5s;
+            
         }
         .dropdown-item {
             padding: 0.5em 1.75em;
             transition: all 0.3s;
             color: #222;
+            position: relative;
+            @media(max-width: 991px) {
+              color: #fff;
+              text-align: right;
+              padding: 0.25em 1em 0.25em 0;
+              &:after {
+                content: '';
+                display: block;
+                width: 1px;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: #fff; 
+              }
+              &:last-child:after {
+                height: 50%;
+              }
+              &:before {
+                content: '';
+                display: block;
+                width: 0.5em;
+                height: 1px;
+                position: absolute;
+                top: 0.855em;
+                right: 0;
+                background-color: #fff; 
+              } 
+            }
             &:first-child {
                 border-radius: 0.25rem 0.25rem 0 0;
             }
@@ -603,14 +802,35 @@ $primary-bg: #303030;
             &:hover {
                 background-color: $main-color;
                 color: #fff;
+                @media(max-width: 991px) {
+                  background-color: transparent;
+                }
             }
         }
     }
     &__humburger {
+        display: none;
         color: #fff;
+        font-size: 1.5rem;
+        padding: 0.25rem 0.75rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        @media (max-width: 991px){
+          display: block;
+        }
     }
     &__btn {
         width: 11em;
+        @media(max-width: 991px) {
+            margin-right: 1.5em;
+            height: 2.3em;
+            line-height: 1.8em;
+        }
+        @media(max-width: 370px) {
+          margin-right: 0.5em;
+        }
     }
 }
 
@@ -633,6 +853,12 @@ $primary-bg: #303030;
         position: relative;
         @media(max-width: 1199px) {
             width: 9em;
+        }
+        @media (max-width: 991px) {
+          width: 8em;
+        }
+        @media(max-width: 370px) {
+          width: 6em;
         }
     }
     &__img {
@@ -660,6 +886,7 @@ $primary-bg: #303030;
     background-color: $primary-bg;
     color: #fff;
     font-size: 1.125rem;
+    overflow: hidden;
     @media(max-width: 1199px) {
         font-size: 1rem;
     }
@@ -763,6 +990,9 @@ $primary-bg: #303030;
       outline: none;
       border-color: $main-color;
       color: $main-color;
+    }
+    @media (max-width: 576px) {
+      top: -3.8em;
     }
   }
   &-prev {
@@ -890,6 +1120,7 @@ $primary-bg: #303030;
 .slide {
   &-content {
     height: inherit;
+    min-height: inherit;
     background-position: center;
     background-size: cover;
     margin-bottom: 0.8em;
@@ -899,6 +1130,10 @@ $primary-bg: #303030;
   &-img {
     position: relative;
     margin-bottom: 0.8em;
+    width: 100%;
+    padding-top: 54%;
+    background-size: cover;
+    background-position: center;
     img {
       width: 100%;
     }
@@ -921,6 +1156,7 @@ $primary-bg: #303030;
 }
 
 .main {
+  overflow: hidden;
   &__slider {
     position: relative;
     .slick-dots {
@@ -955,6 +1191,15 @@ $primary-bg: #303030;
   &__slide {
     height: 625px; //if calc don't work in some browsers
     height: calc(100vh - 8.25em);
+    min-height: 350px;
+    @media (max-width: 991px) {
+      height: 500px;
+      height: calc(100vh - 5em);
+    }
+    @media (max-width: 575px) {
+      height: 400px;
+      height: calc(100vh - 3.2em);
+    }
   }
   &__slide-content {
     display: flex;
@@ -1420,6 +1665,5 @@ $primary-bg: #303030;
   }
   &__proof {
     min-height: 7.500em;
-  }
-  
+  } 
 }

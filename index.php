@@ -12,9 +12,11 @@
 </head>
 <body>
 	<?php include 'header.php'; ?>
-
-	<div class="d-none">
 		<?php include 'main.php'; ?>
+		
+		<div class="d-none">
+			
+
 
 		<?php include 'about_us.php'; ?>
 
@@ -32,12 +34,10 @@
 
 		<?php include 'price.php'; ?>
 
-	</div>
-
 		
 		<?php include 'contacts.php'; ?>
 
-	
+			</div>
 
 	
 
