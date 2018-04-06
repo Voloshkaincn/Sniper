@@ -13,12 +13,6 @@
 <body>
 	<?php include 'header.php'; ?>
 		<?php include 'main.php'; ?>
-		
-		<div class="d-none">
-			
-
-
-		<?php include 'about_us.php'; ?>
 
 		<?php include 'news_view.php'; ?>
 
@@ -36,8 +30,11 @@
 
 		
 		<?php include 'contacts.php'; ?>
+			
 
-			</div>
+		<?php include 'about_us.php'; ?>
+
+		
 
 	
 

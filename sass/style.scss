@@ -1,6 +1,8 @@
-$main-color: #4caf50;
-$basic-bg: #3b3b3b;
-$primary-bg: #303030;
+$main-color: #4caf50;//button, hover, main line (now is green)
+$basic-bg: #3b3b3b;//top section of header
+$primary-bg: #303030;//color of footer and header
+
+//in bootstrap added new grid-breakpoints. It is "xsm", which width is 461px. 
 
 
 @import '../fonts/iconmoon/style.css';
@@ -231,6 +233,9 @@ $primary-bg: #303030;
       font-size: 16px;
       font-family: 'Roboto', sans-serif;
       color: #333;
+      @media(max-width: 767px) {
+          font-size: 14px;
+      }
   }
 
   .container {
@@ -298,11 +303,20 @@ $primary-bg: #303030;
       content: '';
     }
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .caption-text {
     font-style: italic;
     font-size: 1.063em;
     text-align: center;
     margin: 0.75em 0;
+    @media (max-width: 1199px) {
+      font-size: 1em;
+    }
+    @media (max-width: 991px) {
+      font-size: 0.9em;
+    }
   }
 
   .left-img {
@@ -324,6 +338,9 @@ $primary-bg: #303030;
   }
   .big-text {
     font-size: 1.5rem;//24px
+    @media(max-width: 767px) {
+      font-size: 1.3rem;
+    }
   }
   .middle-text {
     font-size: 1.125rem;//18px
@@ -362,7 +379,7 @@ $primary-bg: #303030;
       display: block;
       transition: all 0.3s;
       text-align: center;
-      line-height: 2.65em;
+      line-height: 2.8em;
       &:hover {
           outline: none;
       }
@@ -425,6 +442,9 @@ $primary-bg: #303030;
     width: 100%;
     font-size: 1.125em;
     margin-bottom: 2em;
+    @media (max-width: 460px) {
+      font-size: 1em;
+    }
     th {
       border-bottom: 2px solid #dddddd;
       font-weight: bold;
@@ -432,7 +452,7 @@ $primary-bg: #303030;
     }
     td {
       border-bottom: 1px solid #ddd;
-      line-height: 3.778em;
+      line-height: 1.2em;
     }
   }
   button:focus,
@@ -440,6 +460,11 @@ $primary-bg: #303030;
   input:focus,
   textarea:focus {
     outline-color: $main-color;
+  }
+  .table-flex {
+    display: flex;
+    align-items: center;
+    min-height: 3.75em;
   }
 //----end classes modifiers
 
@@ -879,6 +904,12 @@ $primary-bg: #303030;
         display: inline-block;
         color: #838383;
         margin-right: 1.5em;
+        @media (max-width: 1199px) {
+          margin-right: 0.5em;
+        }
+        @media (max-width: 991px) {
+          width: 100%;
+        }
     }
 }
 
@@ -891,17 +922,31 @@ $primary-bg: #303030;
         font-size: 1rem;
     }
     &__container {
-        display: flex;
         padding-top: 3em;
         padding-bottom: 2em;
+         @media(max-width: 460px) {
+            flex-wrap: wrap;
+            position: relative;
+            padding-top: 7em;
+            width: 80%;
+            .logo__wrap {
+              width: 11em;
+              position: absolute;
+              left: 50%;
+              margin-left: -5.5em;
+              top: 1em;
+            }
+        }
     }
-    &__logo {
-        width: 11em;
+    .logo {
+      width: auto;
+      position: relative;
     }
     &__block {
-        max-width: 22.5em;
-        margin-left: 30px;
-        margin-right: 4.375em;
+        @media(max-width: 460px) {
+            margin-top: 2em;
+            text-align: center;
+        }
     }
     &__title {
         font-weight: bold;
@@ -915,11 +960,30 @@ $primary-bg: #303030;
     &__nav {
         margin: 0;
         color: #fff;
+        @media(max-width: 576px) {
+          padding-right: 2rem;
+          text-align: right;
+          &-title {
+            padding-right: 2rem;
+            text-align: right;
+          }
+        }
+        @media(max-width: 460px) {
+          text-align: center;
+          padding: 0;
+          &-title {
+            text-align: center;
+            padding: 0;
+          }
+        }
     }
     &__nav-item {
         font-size: 1.125em;
         line-height: 2em;
         display: inline-block;
+        @media(max-width: 460px) {
+          line-height: 1.6em;
+        }
         &:first-child {
             margin-top: -0.5em;
         }
@@ -936,6 +1000,9 @@ $primary-bg: #303030;
         color: #838383;
         padding: 0.85em 0;
         font-size: 1rem;
+        @media(max-width: 575px) {
+          padding: 0.85em 1em;
+        }
         a {
             color: #fff;
         }
@@ -952,8 +1019,14 @@ $primary-bg: #303030;
   &__map {
     position: absolute;
     left: 0;
+    top: 0;
     width: 50%;
     height: 100%;
+    @media (max-width: 575px) {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
 
   }
 }
@@ -991,7 +1064,7 @@ $primary-bg: #303030;
       border-color: $main-color;
       color: $main-color;
     }
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       top: -3.8em;
     }
   }
@@ -1038,6 +1111,9 @@ $primary-bg: #303030;
 .content {
   padding: 2.5em 0;
   background-color: #fff;
+  @media (max-width: 575px) {
+    padding-top: 3.5em;
+  }
   &-title {
     font-size: 2.250em;
     margin: 0.8rem 0;
@@ -1054,6 +1130,12 @@ $primary-bg: #303030;
       left: 0.05em;
       background-color: $main-color;
       z-index: -1;
+    }
+    @media (max-width: 575px) {
+      max-width: 80%;
+      &:after {
+        width: 120%;
+      }
     }
   }
   &-after-title {
@@ -1073,7 +1155,8 @@ $primary-bg: #303030;
     margin-top: 0;
   }
   &-text {
-    font-size: 1.125rem;;
+    font-size: 1.125rem;
+    overflow: hidden;
     ul {
       padding-left: 8.5%;
       list-style: none;
@@ -1108,6 +1191,9 @@ $primary-bg: #303030;
           top: 0;
           color: $main-color;
           text-align: center;
+          @media (max-width: 575px) {
+            left: -1.5em;
+          }
         }
       }
     }
@@ -1150,6 +1236,12 @@ $primary-bg: #303030;
 .breadcrumb {
   margin-top: 0;
   padding: 0.75rem 0;
+  a {
+    transition: all 0.3s;
+    &:hover {
+      color: $main-color;
+    }
+  }
 }
 .breadcrumb-item.active {
     color: $main-color;
@@ -1191,7 +1283,7 @@ $primary-bg: #303030;
   &__slide {
     height: 625px; //if calc don't work in some browsers
     height: calc(100vh - 8.25em);
-    min-height: 350px;
+    min-height: 400px;
     @media (max-width: 991px) {
       height: 500px;
       height: calc(100vh - 5em);
@@ -1232,7 +1324,7 @@ $primary-bg: #303030;
     background-position: center;
     position: fixed;
     top: 0;
-    height: 100%;
+    height: 110%;
     width: 100%;
     z-index: -1;
   }
@@ -1241,6 +1333,15 @@ $primary-bg: #303030;
   }
   &__gallery {
     padding: 5em 0 10em 0;
+    &-top {
+      position: relative;
+      .slick-arrow {
+        top: 1em;
+        @media (max-width: 575px){
+          top: 0;
+        }
+      }
+    }
   }
 }
 
@@ -1265,6 +1366,18 @@ $primary-bg: #303030;
     display: flex;
     flex-direction: column;
     background-color: #333333;
+    @media (max-width: 991px) {
+      font-size: 0.8rem;
+      height: 310px;
+    }
+    @media (max-width: 991px) {
+      height: 270px;
+    }
+    @media (max-width: 575px) {
+      height: auto;
+      margin-top: 1.5em;
+      position: relative;
+    }
     &:hover {
       .promo__info {
         min-height: 87%;;
@@ -1295,8 +1408,7 @@ $primary-bg: #303030;
     background-position: top center;
     position: relative;
     transition: all 2s;
-    flex-shrink: 2;
-    
+    flex-shrink: 2;  
     &:after {
       content: '';
       width: 100%;
@@ -1308,6 +1420,14 @@ $primary-bg: #303030;
       background-color: #333333;
       z-index: 2;
       transition: opacity 0.8s;
+    }
+    @media (max-width: 575px) {
+      width: 40%;
+      position: absolute;
+      max-height: 100%;
+    }
+    @media (max-width: 425px) {
+      width: 15%
     }
   }
   &__info {
@@ -1340,21 +1460,49 @@ $primary-bg: #303030;
       width: 25%;
       background-color: $main-color;
     }
+    @media (max-width: 575px) {
+      width: 60%;
+      margin-left: auto;
+      padding: 1.5em;
+      &:after {
+        width: 6px;
+        height: 60%;
+      }
+      &:before {
+        width: 6px;
+        height: 82%;
+        left: 0;
+      }
+    }
+    @media (max-width: 425px) {
+      width: 85%;
+    }
     &-line {
       width: 100%;
       height: 30px;
       background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       top: -30px;
+      &:before {
+          content: '';
+          position: absolute;
+          bottom: 24px;
+          left: 0;
+          width: 60%;
+          height: 6px;
+          background-color: $main-color;
+          z-index: 1;
+      }
+      @media (max-width: 575px) {
+        height: 100%;
+        width: 30px;
+        left: -30px;
+        top: 0;
         &:before {
-        content: '';
-        position: absolute;
-        bottom: 24px;
-        left: 0;
-        width: 60%;
-        height: 6px;
-        background-color: $main-color;
-        z-index: 1;
+          width: 6px;
+          height: 60%;
+          bottom: 0;
+        }
       }
     }
   }
@@ -1376,8 +1524,7 @@ $primary-bg: #303030;
     margin-bottom: 2.5em;
   }
   &__slide-content {
-    height: 20em;
-    height: 22vw;
+    padding-top: 87.5%;
   }
 }
 .fancy-img {
@@ -1415,11 +1562,23 @@ $primary-bg: #303030;
 
 .about-us {
   padding-bottom: 5em;
+  overflow: hidden; //on screen max-width 425px, the content not to be placed
   &__img {
     position: absolute;
     right: 15px;
     max-height: 100%;
     padding-top: 0.8em;
+    @media (max-width: 991px) {
+      max-height: 70%;
+    }
+    @media (max-width: 767px) {
+      top: 0;
+      max-height: 100%;
+      &-wrap {
+        float: left;
+        padding-top: 60%;
+      } 
+    }
   }
   &__ps-text {
     font-size: 1.5em;
@@ -1441,10 +1600,25 @@ $primary-bg: #303030;
     background-color: $main-color;
     border-radius: 50%;
     margin: 1.5em 0;
+    display: flex;
+    // @media (max-width: 767px) {
+    //   margin-right: auto;
+    //   margin-left: auto;
+    // }
+    @media (max-width: 459px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    img {
+      margin: auto;
+    }
   }
 }
 .instructors {
   padding: 3em 0 4em;
+  img{
+    max-width: 100%;
+  }
 }
 .share-btn {
   width: 3.125em;
@@ -1462,6 +1636,13 @@ $primary-bg: #303030;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 0.8em;
+  &__wrap{
+    @media (max-width: 575px) {
+      position: absolute;
+      bottom: -0.8em;;
+      right: 0;
+    }
+  }
   &__link {
     width: 1.925em;
     height: 1.925em;
@@ -1547,6 +1728,9 @@ $primary-bg: #303030;
     list-style: none;
     margin: 0 5em;
     padding: 0;
+    @media (max-width: 575px) {
+      margin: 0 1.5em;
+    }
   }
   &__item {
     font-size: 0.875rem;
@@ -1562,15 +1746,30 @@ $primary-bg: #303030;
       background-color: $main-color;
       color: #fff;
     }
+    @media (max-width: 575px) {
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+    }
 
   }
 }
 .promo-actions {
+  &__wrap {
+    @media (max-width: 991px) {
+      font-size: 14px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
   &__img {
     width: 100%;
     padding-top: 75%;
     background-position: center;
     background-size: cover;
+    @media (max-width: 991px) {
+      align-self: start;
+    }
 
   }
   &__title {
@@ -1578,6 +1777,10 @@ $primary-bg: #303030;
     font-size: 1.5em;
     display: block;
     text-align: center;
+    width: 100%;
+    @media (max-width: 991px) {
+      font-size: 1.3em;
+    }
   }
   &__text {
     font-size: 1.125em;
@@ -1590,6 +1793,11 @@ $primary-bg: #303030;
   }
 }
 .gallery {
+  &__wrap {
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }
+  }
   &__img {
     width: 100%;
     padding-top: 90%;
@@ -1598,7 +1806,10 @@ $primary-bg: #303030;
   }
   &__title {
     margin: 1.125em 0;
-    font-size: 1.5em;   
+    font-size: 1.5em;
+    @media (max-width: 767px) {
+      font-size: 1.25em;
+    }
   }
   &-view {
     &__wrap {
@@ -1620,8 +1831,26 @@ $primary-bg: #303030;
   }
 }
 .price {
+  &__content {
+    @media (max-width: 1199px) {
+      font-size: 15px;
+    }
+    @media (max-width: 991px) {
+      font-size: 14px;
+    }  
+  }
   &__block {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+      font-size: 13px;
+    }
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
     p {
       margin: 0;
     }
@@ -1638,8 +1867,21 @@ $primary-bg: #303030;
     font-size: 1.125em;
     border-bottom: 1px solid #dddddd;
     padding: 0 1em 0 1.3em;
+    @media (max-width: 991px) {
+      padding: 0.3em 0.55em;
+    }
+    @media (max-width: 767px) {
+      display: block;
+      p {
+        line-height: 1.3em;
+      }
+    }
+
     button {
       margin: 1.2em 0.2em;
+      @media (max-width: 767px) {
+        margin: 0.5em 0.2em;
+      }
     }
   }
   &__title {
@@ -1648,11 +1890,33 @@ $primary-bg: #303030;
     margin: 0 auto;
     height: 3.250em;
     justify-content: center;
+    @media (max-width: 1199px) {
+      font-size: 1.4em;
+    }
+    @media (max-width: 991px) {
+      font-size: 1.3em;
+      padding: 0 10px;
+    }
+    @media (max-width: 767px) {
+      text-align: center;
+      padding-top: 0.3em;
+    }
   }
   &__icon {
     margin-right: 1.35em;
     text-align: center;
     vertical-align: middle;
+    max-width: 20%;
+    @media (max-width: 767px) {
+      float: left;
+      margin: 0.5em 0.5em 0.5em 0;
+    }
+    @media (max-width: 460px) {
+      max-width: 15%;
+    }
+    img {
+      max-width: 100%;
+    }
   }
   &__marker {
     min-height: 6.000em;

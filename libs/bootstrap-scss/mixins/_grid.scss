@@ -8,6 +8,10 @@
   padding-left: ($grid-gutter-width / 2);
   margin-right: auto;
   margin-left: auto;
+  @include media-breakpoint-down(sm) {
+    padding-right: ($grid-gutter-width / 4);
+    padding-left: ($grid-gutter-width / 4);
+  }
 }
 
 
@@ -25,6 +29,10 @@
   flex-wrap: wrap;
   margin-right: ($grid-gutter-width / -2);
   margin-left: ($grid-gutter-width / -2);
+  @include media-breakpoint-down(sm) {
+    margin-right: ($grid-gutter-width / -4);
+    margin-left: ($grid-gutter-width / -4);
+  }
 }
 
 @mixin make-col-ready() {
@@ -36,6 +44,11 @@
   min-height: 1px; // Prevent collapsing
   padding-right: ($grid-gutter-width / 2);
   padding-left: ($grid-gutter-width / 2);
+  @include media-breakpoint-down(sm) {
+    padding-right: ($grid-gutter-width / 4);
+    padding-left: ($grid-gutter-width / 4);
+  }
+
 }
 
 @mixin make-col($size, $columns: $grid-columns) {

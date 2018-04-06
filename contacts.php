@@ -1,9 +1,8 @@
 <div class="contacts-page">
-	<div class="container no-padding">
-		<div id="map" class="contact__map"></div>
-		<div class="container  pt-5 pb-7">
-			<div class="col-6 ml-auto mb-7">
-				<div class="col-10 ml-auto">
+	<div class="container  pt-md-5 pb-md-7 pt-3 pb-3">
+		<div class="row">
+			<div class="col-sm-6 col-12 ml-auto mb-lg-7 mb-md-5 mb-3">
+				<div class="col-xl-10 col-lg-11 col-12 ml-auto">
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb">
 					    <li class="breadcrumb-item"><a href="/">Головна</a></li>
@@ -26,7 +25,7 @@
 								<span class="main-color icon icon-location2"></span>пр. Глушкова 1п21, Киев Национальный выставочный Центр
 							</p>
 						</div>
-						<div class="col-6 pl-0">
+						<div class="col-lg-6 col-md-8 col-10 pl-0">
 							<button class="footer__btn btn__main-full">Замовити гру</button>
 						</div>					
 						<p class="big-text strong-text">Як добратися до майданчика?</p>
@@ -36,8 +35,8 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
+	<div id="map" class="contact__map"></div>
 </div>
 
 <script>                                                                                

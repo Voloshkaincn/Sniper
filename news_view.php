@@ -1,5 +1,5 @@
 <div class="content">
-	<div class="container  mt-5">
+	<div class="container">
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
 		    <li class="breadcrumb-item"><a href="/">Головна</a></li>
@@ -8,12 +8,12 @@
 		  </ol>
 		</nav>
 
-		<div class="row  align-items-end">
+		<div class="row  align-items-end position-relative pb-xsm-0 pb-5">
 			<div class="col">
 				<h1 class="content-title">Назва новини</h1>
 				<p class="content-date"><span class="icon-clock main-color"></span> 10 січ 2017</p>
 			</div>
-			<div class="col ml-auto">
+			<div class="col ml-auto social-share__wrap">
 				<div class="social-share">
 					<a href="#" class="social-share__link facebook-share"></a>
 					<a href="#" class="social-share__link vk-share"></a>
@@ -26,6 +26,7 @@
 			</div>
 		</div>
 		<hr></hr>
+
 		<div class="content-text">
 			<h1>Заголовок 1</h1>
 			<h2>Заголовок 2</h2>
@@ -70,19 +71,20 @@
 					<p>С другой стороны новая модель организационной деятельности позволяет оценить значение новых предложений. </p>
 					<blockquote class="style-quote">С другой стороны новая модель организационной деятельности позволяет оценить значение новых предложений. С другой стороны укрепление и развитие структуры. </blockquote>
 				</div>
-				<div class="col-4">
+				<div class="col-4 m-auto">
 					<img src="img/content/pic.jpg" alt="img">
 					<p class="caption-text">Рисунок 2 – Название рисунка</p>
 				</div>
 			</div>			
 			<p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Товарищи! новая модель организационной деятельности позволяет выполнять важные задания по разработке форм развития. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Задача организации, в особенности же новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности способствует подготовки и реализации форм развития. Не следует, однако забывать, что консультация с широким активом требуют определения и уточнения дальнейших направлений развития.</p>
-					
+		</div>
+
+		<div class="overflow-hidden">	
 			<h1 class="content-title mt-5">Більше новин</h1>
-			<div class="row mt-4 mb-5">
-				<div class="news__slide col-4">
+			<div class="row mt-4 mb-5 flex-nowrap">
+				<div class="col-sm-4 col-6">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide2.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide2.jpg);">
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -92,10 +94,9 @@
 						<button class="btn__main-empty">Детальніше</button>
 					</div>
 				</div>
-				<div class="news__slide  col-4">
+				<div class="col-sm-4 col-6">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide3.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide3.jpg);">
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -105,10 +106,9 @@
 						<button class="btn__main-empty">Детальніше</button>
 					</div>
 				</div>
-				<div class="news__slide  col-4">
+				<div class="col-4">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide4.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide4.jpg);">
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
@@ -120,9 +120,6 @@
 				</div>
 			</div>
 		</div>
-		
-
-	
 		
 	</div>
 </div>

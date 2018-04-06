@@ -15,8 +15,8 @@ $(document).ready(function(){
 		customPaging: function(){
 			return '<div class="main__slider-pag"></div>';
 		},
-		//autoplay: true,
-		//autoplaySpeed: 5000
+		autoplay: true,
+		autoplaySpeed: 5000
 	});
 
 	$('.news__slider').slick({
@@ -24,7 +24,7 @@ $(document).ready(function(){
 		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
 		slidesToShow: 3,
-		 responsive: [
+		responsive: [
 		    {
 		      breakpoint: 768,
 		      settings: {
@@ -43,7 +43,22 @@ $(document).ready(function(){
 	$('.gallery__slider').slick({
 		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
-		slidesToShow: 4
+		slidesToShow: 4,
+		appendArrows: $('.main__gallery-top'),
+		responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 3,
+		      },
+		  },
+		  {
+		      breakpoint: 461,
+		      settings: {
+		        slidesToShow: 2,
+		      }
+		   }
+		]
 	})
 
 	var slide_height = $('.slide-full-height').height();
@@ -60,4 +75,17 @@ $(document).ready(function(){
 		event.stopPropagation();
 	});
 
+	//paralax effect in main promo section
+	var main = $('.main__promo').length;//if page is main
+	if(main){
+		$(window).scroll(function() {			
+				var parallax = $('.main__promo').offset().top,
+				scrollTop = $(this).scrollTop(),
+				scrollBottom = scrollTop + $(window).height();	
+				if (scrollBottom >= (parallax) && scrollTop <= (parallax + $('.main__promo').height())) {
+					$(".main__promo-bg").css({'top': -($(window).scrollTop() - parallax)/3});	
+				}	
+		});	
+	}
 });
+

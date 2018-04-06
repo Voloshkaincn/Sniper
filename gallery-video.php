@@ -1,5 +1,5 @@
 <div class="content gallery-photo">
-	<div class="container no-padding  mt-5">
+	<div class="container no-padding">
 
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
@@ -14,27 +14,27 @@
 	</div>
 	<div class="container">
 		<div class="row flex-wrap mt-4 mb-5">
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>
-			<div class="gallery__wrap col-6 mb-4">
+			<div class="gallery__wrap col-xsm-6 col-12 mb-md-4 mb-3">
 				<a href="https://www.youtube.com/watch?v=AU2xkRCn8ls" data-fancybox="video" class="gallery-view__img" style="background-image: url(img/content/slide2.jpg)"></a>
 				<button class="play-btn"><span class="icon-play"></span></button>
 			</div>

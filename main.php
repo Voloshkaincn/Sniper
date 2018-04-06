@@ -182,16 +182,16 @@
 		<div class="main__promo-bg"></div>
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-9">
+				<div class="col-md col-12">
 					<h1 class="content-title">Акційні пропозиції</h1>
-					<p class="content-after-title">Не упусти свій шанс!</p>
+					<p class="content-after-title mb-md-4 mb-3">Не упусти свій шанс!</p>
 				</div>
-				<div class="col-3">
+				<div class="col-lg-3 col-sm-5 col-9 mb-3">
 					<a href="/promo" class="btn__main-empty">Всі акційні пропозиції</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-6">
+				<div class="col-sm-6 col-12">
 					<div class="promo__block">
 						<div class="promo__img" style="background-image: url(img/content/promo-img1.jpg);"></div>
 						<div class="promo__info">
@@ -201,7 +201,7 @@
 						</div>
 					</div>					
 				</div>
-				<div class="col-3">
+				<div class="col-sm-3 col-12">
 					<div class="promo__block">
 						<div class="promo__img" style="background-image: url(img/content/promo-img1.jpg);"></div>
 						<div class="promo__info">
@@ -211,7 +211,7 @@
 						</div>
 					</div>					
 				</div>
-				<div class="col-3">
+				<div class="col-sm-3 col-12" >
 					<div class="promo__block">
 						<div class="promo__img" style="background-image: url(img/content/promo-img2.jpg);"></div>
 						<div class="promo__info">
@@ -226,7 +226,7 @@
 	</div>
 
 	<div class="main__gallery light-bg">
-		<div class="container">
+		<div class="container main__gallery-top"> 
 			<h1 class="content-title">Галерея</h1>
 			<p class="content-after-title">Побач найяскравіші моменти нашого клубу!</p>
 		</div>
@@ -252,11 +252,11 @@
 				</a>
 			</div>
 		</div>
-		<div class="col-6 m-auto d-flex">
-			<div class="col-6">
+		<div class="col-lg-6 col-md-8 col-10 m-auto d-flex flex-wrap">
+			<div class="col-sm-6 col-12 mb-sm-0 mb-3">
 				<a href="/gallery" class="btn__main-empty">Фото полігону</a>
 			</div>
-			<div class="col-6">
+			<div class="col-sm-6 col-12 ">
 				<a href="/gallery" class="btn__main-full">Більше фото</a>
 			</div>
 		</div>

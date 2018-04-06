@@ -25,6 +25,10 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+  @media (max-width: 767.98px) {
+    .container {
+      padding-right: 7.5px;
+      padding-left: 7.5px; } }
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -44,6 +48,10 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+  @media (max-width: 767.98px) {
+    .container-fluid {
+      padding-right: 7.5px;
+      padding-left: 7.5px; } }
 
 .row {
   display: -webkit-box;
@@ -53,6 +61,10 @@ html {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+  @media (max-width: 767.98px) {
+    .row {
+      margin-right: -7.5px;
+      margin-left: -7.5px; } }
 
 .no-gutters {
   margin-right: 0;
@@ -74,6 +86,16 @@ html {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
+  @media (max-width: 767.98px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+    .col-auto, .col-xsm-1, .col-xsm-2, .col-xsm-3, .col-xsm-4, .col-xsm-5, .col-xsm-6, .col-xsm-7, .col-xsm-8, .col-xsm-9, .col-xsm-10, .col-xsm-11, .col-xsm-12, .col-xsm,
+    .col-xsm-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+    .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+    .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+    .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+    .col-xl-auto {
+      padding-right: 7.5px;
+      padding-left: 7.5px; } }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -270,7 +292,7 @@ html {
 .offset-11 {
   margin-left: 91.66667%; }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .col-xsm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1096,7 +1118,7 @@ html {
   display: -ms-inline-flexbox !important;
   display: inline-flex !important; }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .d-xsm-none {
     display: none !important; }
   .d-xsm-inline {
@@ -1373,7 +1395,7 @@ html {
   -ms-flex-item-align: stretch !important;
   align-self: stretch !important; }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .flex-xsm-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -2066,13 +2088,13 @@ html {
   background: no-repeat center center;
   background-size: 100% 100%; }
 
-@media (max-width: 459.98px) {
+@media (max-width: 460.98px) {
   .navbar-expand-xsm > .container,
   .navbar-expand-xsm > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .navbar-expand-xsm {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2891,7 +2913,7 @@ tbody.collapse.show {
 .mx-auto {
   margin-left: auto !important; }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .m-xsm-0 {
     margin: 0 !important; }
   .mt-xsm-0,
@@ -4139,7 +4161,7 @@ tbody.collapse.show {
 .text-center {
   text-align: center !important; }
 
-@media (min-width: 460px) {
+@media (min-width: 461px) {
   .text-xsm-left {
     text-align: left !important; }
   .text-xsm-right {
@@ -4260,6 +4282,43 @@ a.text-dark:hover, a.text-dark:focus {
   text-shadow: none;
   background-color: transparent;
   border: 0; }
+
+.position-static {
+  position: static !important; }
+
+.position-relative {
+  position: relative !important; }
+
+.position-absolute {
+  position: absolute !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
+.position-sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important; }
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030; }
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020; } }
 
 /* Slider */
 .slick-slider {

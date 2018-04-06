@@ -1,5 +1,5 @@
 <div class="content gallery-photo">
-	<div class="container no-padding  mt-5">
+	<div class="container no-padding">
 
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
@@ -13,32 +13,32 @@
 	</div>
 	<div class="container">
 		<div class="row flex-wrap mt-4">
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide2.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>
 			</div>
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide3.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>
 			</div>
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide1.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>
 			</div>
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide2.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>
 			</div>
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide3.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>
 			</div>
-			<div class="gallery__wrap col-4 mb-5">
+			<div class="gallery__wrap col-xsm-4 col-6 mb-xsm-5 mb-4">
 				<div class="gallery__img" style="background-image: url(img/content/slide1.jpg)"></div>
 				<a href="#" class="gallery__title content-link">Супер-пейнтбол корпоратив на дністрі. </a>
 				<p class="content-date"><span class="icon-clock main-color"></span> 21.06.17</p>

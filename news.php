@@ -1,5 +1,5 @@
 <div class="content">
-	<div class="container no-padding  mt-5">
+	<div class="container no-padding">
 
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
@@ -13,11 +13,10 @@
 	</div>
 	<div class="container">
 		<div class="row flex-wrap mt-4 mb-5">
-			<?php for($i=0; $i<9; $i++) : ?>
-				<div class="news__slide col-4 mb-5">
+			<?php for($i=0; $i<6; $i++) : ?>
+				<div class="col-sm-4 col-xsm-6 col-12 mb-md-5 mb-4">
 					<div class="news__slide-wrap">
-						<div class="slide-img"">
-							<img src="img/content/slide2.jpg" alt="img">
+						<div class="slide-img" style="background-image: url(img/content/slide4.jpg);">
 							<div class="img-label light-color">
 								<span class="icon-clock main-color"></span> 21.06.17
 							</div>
