@@ -12,11 +12,11 @@
 					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
 						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
 							<button class="main__slide-btn btn__main-empty light-color">
-								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+								<img class="mb-2" src="img/photo-camera.png" alt="icon"> Фото полігону
 							</button>
 						</div>
 						<div class="col-lg-6 col-12 d-inline-block">
-							<button class="main__slide-btn btn__main-full">
+							<button class="main__slide-btn btn__main-full" data-toggle="modal" data-target="#recall">
 								<img src="img/maska.png" alt="icon">Замовити гру
 							</button>
 						</div>
@@ -34,7 +34,7 @@
 					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
 						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
 							<button class="main__slide-btn btn__main-empty light-color">
-								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+								<img class="mb-2" src="img/photo-camera.png" alt="icon"> Фото полігону
 							</button>
 						</div>
 						<div class="col-lg-6 col-12 d-inline-block">
@@ -56,7 +56,7 @@
 					<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
 						<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
 							<button class="main__slide-btn btn__main-empty light-color">
-								<img src="img/photo-camera.png" alt="icon"> Фото полігону
+								<img class="mb-2" src="img/photo-camera.png" alt="icon"> Фото полігону
 							</button>
 						</div>
 						<div class="col-lg-6 col-12 d-inline-block">
@@ -78,7 +78,7 @@
 				<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
 					<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
 						<button class="main__slide-btn btn__main-empty light-color">
-							<img src="img/photo-camera.png" alt="icon"> Фото полігону
+							<img class="mb-2" src="img/photo-camera.png" alt="icon"> Фото полігону
 						</button>
 					</div>
 					<div class="col-lg-6 col-12 d-inline-block">
@@ -100,7 +100,7 @@
 				<div class="col-xl-6 col-lg-8 col-sm-6 col-xsm-10 col-12 row m-auto">
 					<div class="col-lg-6 col-12 d-inline-block mb-lg-0 mb-3">
 						<button class="main__slide-btn btn__main-empty light-color">
-							<img src="img/photo-camera.png" alt="icon"> Фото полігону
+							<img class="mb-2" src="img/photo-camera.png" alt="icon"> Фото полігону
 						</button>
 					</div>
 					<div class="col-lg-6 col-12 d-inline-block">

@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content">
 	<div class="container">
 		<nav aria-label="breadcrumb">
@@ -123,3 +125,5 @@
 		
 	</div>
 </div>
+
+<?php include 'footer.php'; ?>

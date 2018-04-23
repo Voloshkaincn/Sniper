@@ -59,3 +59,15 @@
 		© 2018 – Пейнтбольний клуб <a href="sniper.ua">sniper.ua</a>. Всі права захищені. 
 	</div>
 </div>
+
+<?php include 'recall-modal.php'; ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

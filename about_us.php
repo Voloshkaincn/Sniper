@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content">
 	<div class="container">
 		<nav aria-label="breadcrumb">
@@ -54,7 +56,7 @@
 			<div class="col-lg-6 col-md-8 col-sm-11 col-12 m-auto row px-xsm-0">
 				<div class="col-xsm-6 col-12">
 					<button class="btn__main-empty">
-						<img src="img/photo-camera.png" alt="icon">Фото полігону
+						<img class="mb-2" src="img/photo-camera.png" alt="icon">Фото полігону
 					</button>
 				</div>
 				<div class="col-xsm-6 col-12 mt-xsm-0 mt-3">
@@ -83,3 +85,5 @@
 		</div>
 	</div>
 </div>
+
+<?php include 'footer.php'; ?>

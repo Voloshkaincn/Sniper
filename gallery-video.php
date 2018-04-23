@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content gallery-photo">
 	<div class="container no-padding">
 
@@ -56,3 +58,4 @@
 	</div>
 </div>
 
+<?php include 'footer.php'; ?>

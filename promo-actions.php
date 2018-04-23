@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content promo-actions">
 	<div class="container no-padding">
 
@@ -34,4 +36,6 @@
 		</div>
 	</div>
 </div>
+
+<?php include 'footer.php'; ?>
 

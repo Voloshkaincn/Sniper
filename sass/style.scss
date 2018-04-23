@@ -651,6 +651,7 @@ $primary-bg: #303030;//color of footer and header
             height: 50%;
             position: absolute;
             bottom: 0;
+            left: 0;
             background-color: $basic-bg;
             z-index: -1;
             @media (max-width: 575px) {
@@ -748,13 +749,13 @@ $primary-bg: #303030;//color of footer and header
             align-items: center;
             border-bottom: 0.313em solid transparent;
             &:hover {
-                border-bottom: 0.3rem solid $main-color;
+                border-color: $main-color;
                 @media(max-width: 991px) {
                   border-color: transparent;
                 }
             }
             @media(max-width: 991px) {
-              margin: 0.5em 0 0;
+              margin: 0.8em 0 0;
               display: block;
             }
         }
@@ -780,10 +781,11 @@ $primary-bg: #303030;//color of footer and header
               margin-right: 0.25em;
             }
         }
-        .dropdown:hover>.dropdown-menu {
-            display: block;
-            animation: dropdown 0.5s;
-            
+        @media(min-width: 992px) {
+          .dropdown:hover>.dropdown-menu {
+              display: block;
+              animation: dropdown 0.5s;
+          }
         }
         .dropdown-item {
             padding: 0.5em 1.75em;
@@ -1217,9 +1219,19 @@ $primary-bg: #303030;//color of footer and header
     position: relative;
     margin-bottom: 0.8em;
     width: 100%;
-    padding-top: 54%;
+    //padding: 54%;
+    height: 250px;
     background-size: cover;
     background-position: center;
+    @media (max-width: 991px) {
+      height: 165px;
+    }
+    @media (max-width: 767px) {
+      height: 140px;
+    }
+    @media (max-width: 576px) {
+      height: 165px;
+    }
     img {
       width: 100%;
     }
@@ -1282,7 +1294,7 @@ $primary-bg: #303030;//color of footer and header
   }
   &__slide {
     height: 625px; //if calc don't work in some browsers
-    height: calc(100vh - 8.25em);
+    height: calc(100vh - 8.25em - 7px);
     min-height: 400px;
     @media (max-width: 991px) {
       height: 500px;
@@ -1351,6 +1363,7 @@ $primary-bg: #303030;//color of footer and header
   }
   &__slide {
     padding: 0 15px;
+    height: auto !important;
     &-wrap {
       display: flex;
       flex-direction: column;
@@ -1611,6 +1624,7 @@ $primary-bg: #303030;//color of footer and header
     }
     img {
       margin: auto;
+      max-width: 50%;
     }
   }
 }
@@ -1930,4 +1944,114 @@ $primary-bg: #303030;//color of footer and header
   &__proof {
     min-height: 7.500em;
   } 
+}
+
+.modal {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-title {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+  }
+  &-dialog {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &-content {
+    margin: auto;
+    padding: 30px;
+  }
+  .close {
+    position: relative;
+    padding: 13px;
+    margin: 0;
+    &__line {
+      width: 26px;
+      height: 2px;
+      position: absolute;
+      background-color: $main-color;
+      left: 0;
+      top: 12px;
+      transform: rotate(45deg);
+      &:nth-child(2) {
+        transform: rotate(-45deg);
+      }
+
+    }
+}
+
+}
+
+.input-hoshi {
+  position: relative;
+  margin-bottom: 1.5em;
+
+  input {
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+    color: #0a0a0a;
+    margin-top: 0.6em;
+    margin-bottom: 2px;
+    padding-bottom: 0.6em;
+    padding-top: 1.4em;
+    width: 100%;
+    &:focus {
+      outline: none;
+      border-bottom: 4px solid $main-color;
+      margin-bottom: 0;
+    }
+    &.error {
+      color: #e30016;
+      border-bottom: 4px solid #e30016;
+      &+label {
+        color: #e30016;
+      }
+    }
+  }
+  input:focus + label,
+  &.focus label {
+    bottom: 3em;
+    color: $main-color;
+    font-size: 0.778em;
+  }
+  label {
+    color: #999;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0.6em;
+    pointer-events: none;
+    transition: all 0.3s;
+    font-size: 1em;
+    width: 90%;
+    width: calc(100% - 1.875rem);
+  }
+  &__icon {
+    &:before {
+      position: absolute;
+      right: 0.9375rem;
+      bottom: 0.6em;
+      font-size: 1.3em;
+      color: #999;
+      transition: all 0.3s;
+    }
+    &.focus:before {
+      color: $main-color;
+    } 
+  }
+  .error__mess {
+    display: none;
+    position: absolute;
+    bottom: -1.2em;;
+    left: 0;
+    color: #e30016;
+  }
 }

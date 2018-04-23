@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Sniper</title>
+
+	<link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+	
 <div class="header">
 	<div class="header__top">
 		<div class="container">
@@ -80,30 +94,30 @@
 					</div>
 					<ul class="header-menu navbar-nav">
 						<li class="header-menu__item nav-item active">
-							<a class="header-menu__link" href="#a">Акції</a>
+							<a class="header-menu__link" href="promo-actions.php">Акції</a>
 						</li>
 						<li class="header-menu__item nav-item">
-							<a class="header-menu__link" href="#p">Ціни</a>
+							<a class="header-menu__link" href="price.php">Ціни</a>
 						</li>
 						<li class="header-menu__item nav-item">
-							<a class="header-menu__link" href="#p">Новини</a>
+							<a class="header-menu__link" href="news.php">Новини</a>
 						</li>
 						<li class="header-menu__item nav-item dropdown">
-							<a class="header-menu__link dropdown-toggle" href="#g">Галерея</a>
+							<a class="header-menu__link dropdown-toggle" href="gallery-photo.php">Галерея</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#f">Фото</a>
-								<a class="dropdown-item" href="#v">Відео</a>
+								<a class="dropdown-item" href="gallery-photo__view.php">Фото</a>
+								<a class="dropdown-item" href="gallery-video.php">Відео</a>
 							</div>
 						</li>
 						<li class="header-menu__item nav-item">
-							<a class="header-menu__link" href="#с">Контакти</a>
+							<a class="header-menu__link" href="contacts.php">Контакти</a>
 						</li>
 						<li class="header-menu__item nav-item">
-							<a class="header-menu__link" href="#с">Про нас</a>
+							<a class="header-menu__link" href="about_us.php">Про нас</a>
 						</li>
 					</ul>
 				</div>
-				<button class="header__btn btn__main-full">Замовити гру</button>
+				<button class="header__btn btn__main-full" data-toggle="modal" data-target="#recall">Замовити гру</button>
 				<button class="header__humburger" type="button">
 					<span class="icon-bars"></span>
 				</button>			

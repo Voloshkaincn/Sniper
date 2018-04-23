@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content">
 	<div class="container no-padding">
 
@@ -43,4 +45,7 @@
 		</div>
 	</div>
 	</div>
+
+	<?php include 'footer.php'; ?>
+
 	

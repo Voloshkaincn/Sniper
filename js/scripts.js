@@ -24,6 +24,7 @@ $(document).ready(function(){
 		prevArrow: '<button type="button" class="slick-prev"><span class="icon-angle-left"></span></button>',
 		nextArrow: '<button type="button" class="slick-next"><span class="icon-angle-right"></span></button>',
 		slidesToShow: 3,
+		adaptiveHeight: false, 
 		responsive: [
 		    {
 		      breakpoint: 768,
@@ -64,11 +65,11 @@ $(document).ready(function(){
 	var slide_height = $('.slide-full-height').height();
 	$('.slide-full-height').find('.slick-slide').height(slide_height);
 
-	$('.header__humburger').click(function(){
+	$('.header__humburger').on('click', function(event){
 		 $('html').one('click',function() {
             $('.header').removeClass('show');
         });
-		$('.header__collapse').on('click', function(){
+		$('.header__collapse').on('click', function(event){
 			event.stopPropagation();
 		})
 		$('.header').toggleClass('show');
@@ -87,5 +88,23 @@ $(document).ready(function(){
 				}	
 		});	
 	}
+
+	$("input[name=phone]").mask("+38 (999) 999-9999");
+
+	$('.input-hoshi input').on('focusout', function(){
+
+		//if field is NOT empty
+		if($(this).val().trim() != ''){
+			$(this).removeClass('error')
+					.parent('.input-hoshi').addClass('focus')
+					.find('.error__valid').hide();
+		}
+
+		//if field is empty and data has not yet been submitted 
+		else if(!$(this).hasClass('error')){
+			$(this).parent('.input-hoshi').removeClass('focus')
+		}
+	});
+
 });
 

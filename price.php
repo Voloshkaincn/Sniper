@@ -1,3 +1,5 @@
+<?php include 'header.php'; ?>
+
 <div class="content price">
 	<div class="container no-padding">
 		<nav aria-label="breadcrumb">
@@ -235,3 +237,5 @@
 		</div>
 	</div>
 </div>
+<?php include 'footer.php'; ?>
+
