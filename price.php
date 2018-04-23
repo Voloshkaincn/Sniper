@@ -18,7 +18,9 @@
 				<div class="price__block">
 					<div class="price__img" style="background-image: url(img/content/sniper_price1.jpg);"></div>
 					<div class="price__cell price__title">
-						Пакет "Економ" - <span class="main-color">120 грн</span>
+						<span>
+							Пакет "Економ" - <span class="main-color">120 грн</span>
+						</span>						
 					</div>
 					<div class="price__cell price__marker">
 						<img class="price__icon" src="img/gun2.png" alt="icon">
@@ -49,7 +51,9 @@
 				<div class="price__block">
 					<div class="price__img" style="background-image: url(img/content/sniper_price2.jpg);"></div>
 					<div class="price__cell price__title">
-						Пакет "Економ" - <span class="main-color">170 грн</span>
+						<span>
+							Пакет "Економ" - <span class="main-color">170 грн</span>
+						</span>						
 					</div>
 					<div class="price__cell price__marker">
 						<img class="price__icon" src="img/gun2.png" alt="icon">
@@ -79,7 +83,9 @@
 				<div class="price__block">
 					<div class="price__img" style="background-image: url(img/content/sniper_price4.jpg);"></div>
 					<div class="price__cell price__title">
-						Пакет "Економ" - <span class="main-color">200 грн</span>
+						<span>
+							Пакет "Економ" - <span class="main-color">200 грн</span>
+						</span>						
 					</div>
 					<div class="price__cell price__marker">
 						<span class="price__icon">

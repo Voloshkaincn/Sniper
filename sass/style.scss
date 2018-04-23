@@ -1883,7 +1883,22 @@ $primary-bg: #303030;//color of footer and header
   &__img {
     background-position: center;
     background-size: cover;
-    padding-top: 57%;
+    height: 222px;
+    @media (max-width: 1199px) {
+      height: 171px;
+    }
+    @media (max-width: 991px) {
+      height: 125px;
+    }
+    @media (max-width: 767px) {
+      height: 97px;
+    }
+    @media (max-width: 576px) {
+      height: 125px;
+    }
+    @media (max-width: 459px) {
+      height: 152px;
+    }
     
   }
   &__cell {
@@ -1896,7 +1911,6 @@ $primary-bg: #303030;//color of footer and header
       padding: 0.3em 0.55em;
     }
     @media (max-width: 767px) {
-      display: block;
       p {
         line-height: 1.3em;
       }
