@@ -97,7 +97,7 @@ $(document).ready(function(){
 		if($(this).val().trim() != ''){
 			$(this).removeClass('error')
 					.parent('.input-hoshi').addClass('focus')
-					.find('.error__valid').hide();
+					.find('.error__mess').hide();
 		}
 
 		//if field is empty and data has not yet been submitted 
@@ -105,6 +105,22 @@ $(document).ready(function(){
 			$(this).parent('.input-hoshi').removeClass('focus')
 		}
 	});
+
+	$('#recallForm').submit(function(event){
+		var error = false;
+		$(this).find('.required').each(function(){
+			if($(this).val().trim() == ''){
+				$(this).parent('.input-hoshi').addClass('error')
+						.find('.error__required').show();
+				error = true;
+			}
+		});
+		if(error == true){
+			event.preventDefault();	
+			return false;
+		}
+	});
+
 
 });
 

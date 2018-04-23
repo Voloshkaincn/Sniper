@@ -50,7 +50,7 @@
 					</span>
 				</div>			
 				<a href="mailto:sniper@gmail.com" class="d-block mb-4 email"><span class="main-color icon icon-mail"></span>sniper@gmail.com</a>
-				<button class="footer__btn btn__main-full col-xl-8 col-lg-9">Замовити гру</button> 
+				<button class="footer__btn btn__main-full col-xl-8 col-lg-9" data-toggle="modal" data-target="#recall">Замовити гру</button> 
 			</div>
 		</div>
 	</div>

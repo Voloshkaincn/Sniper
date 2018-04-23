@@ -733,9 +733,10 @@ $primary-bg: #303030;//color of footer and header
         display: flex;
         height: 100%;
         margin: 0;
-        margin-right: 3.5em;
+        margin-right: 1.5em;
         @media(max-width: 1299px) {
             margin-right: 1.5em;
+            font-size: 1rem;
         }
         @media(max-width: 991px) {
             margin-right: 0;
@@ -753,6 +754,10 @@ $primary-bg: #303030;//color of footer and header
                 @media(max-width: 991px) {
                   border-color: transparent;
                 }
+            }
+            @media(max-width: 1199px) {
+              margin-right: 0.8em;
+              margin-left: 0.8em;
             }
             @media(max-width: 991px) {
               margin: 0.8em 0 0;
@@ -850,6 +855,9 @@ $primary-bg: #303030;//color of footer and header
     }
     &__btn {
         width: 11em;
+        @media(max-width: 1199px) and (min-width: 992px) {
+          width: 9em;
+        }
         @media(max-width: 991px) {
             margin-right: 1.5em;
             height: 2.3em;
@@ -1756,6 +1764,9 @@ $primary-bg: #303030;//color of footer and header
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
+    &:hover:not(.active) {
+      color: $main-color;
+    }
     &.active {
       background-color: $main-color;
       color: #fff;
@@ -1947,11 +1958,6 @@ $primary-bg: #303030;//color of footer and header
 }
 
 .modal {
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   &-title {
     font-size: 1.5em;
     text-align: center;
@@ -1964,13 +1970,21 @@ $primary-bg: #303030;//color of footer and header
     margin: 0 auto;
   }
   &-content {
-    margin: auto;
+    border: none;
+    margin: auto 15px;
     padding: 30px;
   }
   .close {
-    position: relative;
+    position: absolute;
+    top: 30px;
+    right: 30px;
     padding: 13px;
     margin: 0;
+    z-index: 99;
+    @media(max-width: 575px){
+      top: 15px;
+      right: 15px;
+    }
     &__line {
       width: 26px;
       height: 2px;
@@ -2028,6 +2042,7 @@ $primary-bg: #303030;//color of footer and header
     flex-shrink: 0;
     position: absolute;
     bottom: 0.6em;
+    left: 0;
     pointer-events: none;
     transition: all 0.3s;
     font-size: 1em;
@@ -2053,5 +2068,69 @@ $primary-bg: #303030;//color of footer and header
     bottom: -1.2em;;
     left: 0;
     color: #e30016;
+  }
+}
+#answer {
+  display: none;
+}
+
+.goods {
+  &__wrap {
+    border-radius: 0.5em;
+    padding: 20px 15px 40px;
+    width: 100%;
+    background-color: #fff;
+    &:hover {
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      width: calc(100% + 10px);
+      padding-right: 20px;
+      padding-left: 20px;
+      position: absolute;
+      left: -5px;
+      top: 0;
+      z-index: 9;
+      @media (max-width: 575px) {
+        position: relative;
+        //margin-left: -5px;
+      }
+      .goods__name,
+      .goods__desc {
+        max-height: 100%;
+        overflow: visible;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__name {
+    font-size: 1.5em;
+    font-weight: bold;
+    max-height: 2.5em;
+    overflow: hidden;
+    @media (max-width: 575px) {
+      max-height: 100%;
+      overflow: visible;
+    }
+  }
+  &__desc {
+    font-size: 1.125em;
+    text-align: justify;
+    max-height: 3.7em;
+    overflow: hidden;
+    @media (max-width: 575px) {
+      max-height: 100%;
+      overflow: visible;
+    }
+  }
+  &__price {
+    font-size: 1.5em;
+    font-weight: bold;
   }
 }

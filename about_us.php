@@ -61,7 +61,7 @@
 				</div>
 				<div class="col-xsm-6 col-12 mt-xsm-0 mt-3">
 					<button class="btn__main-full">
-						<img src="img/maska.png" alt="icon">Замовити гру</button>
+						<img src="img/maska.png" alt="icon" data-toggle="modal" data-target="#recall">Замовити гру</button>
 				</div>
 			</div>
 		</div>

@@ -97,6 +97,9 @@
 							<a class="header-menu__link" href="promo-actions.php">Акції</a>
 						</li>
 						<li class="header-menu__item nav-item">
+							<a class="header-menu__link" href="shop.php">Магазин</a>
+						</li>
+						<li class="header-menu__item nav-item">
 							<a class="header-menu__link" href="price.php">Ціни</a>
 						</li>
 						<li class="header-menu__item nav-item">
